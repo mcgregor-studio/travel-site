@@ -3,29 +3,85 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheeet" type="text/css" href="../css/destinations.css" />
+    <link href="https://fonts.googleapis.com/css?family=Verdana" />
+    <link rel="stylesheet" type="text/css" href="../css/global.css" />
+    <link rel="stylesheet" type="text/css" href="../css/destinations.css" />
     <title>Travel Site - Hawaii</title>
   </head>
   <body>
-    <!-- Header -->
-    <header>
-      <nav>
-        <ul>
-          <li><a>Greece</a></li>
-          <li><a>Hawaii</a></li>
-          <li><a>Iceland</a></li>
-        </ul>
-      </nav>
-    </header>
+  <!-- Header -->
+  <header class="header">
+    <h3 class="header__title">Travel Site</h3>
+    <nav class="header__nav">
+      <ul class="header__list">
+        <li class="header__list--link">
+          <a href="../index.html">Home</a>
+        </li>
+        <li class="header__list--link">
+          <a href="../pages/greece.html">Greece</a>
+        </li>
+        <li class="header__list--link active-link">
+          <a href="../pages/hawaii.html">Hawaii</a>
+        </li>
+        <li class="header__list--link">
+          <a href="../pages/iceland.html">Iceland</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-<!-- Itinerary -->
-<section>
-    <card><h2>Friday</h2></card>
-    <card><h2>Saturday</h2></card>
-    <card><h2>Sunday</h2></card>
-</section>
+    <!-- Itinerary -->
+    <section>
+      <card><h2>Friday</h2></card>
+      <card><h2>Saturday</h2></card>
+      <card><h2>Sunday</h2></card>
+    </section>
 
-    <!-- Footer -->
-    <footer></footer>
+     <!-- Footer -->
+     <footer class="footer">
+      <div class="footer__section">
+        <h3 class="footer__section--title">Contact</h3>
+        <h5 class="footer__section--subtitle">Email</h5>
+        <a class="footer__section--link" href="mailto:info@travelsite.com">
+          info@travelsite.com
+        </a>
+      </div>
+      <div class="footer__section">
+        <h3 class="footer__section--title">Hours</h3>
+        <div class="footer__hours--container">
+          <div class="footer__hours--date">
+            <h5 class="footer__section--subtitle">Monday - Friday</h5>
+            <p class="footer__section--text">9:00 AM - 5:00 PM</p>
+          </div>
+          <div class="footer__hours--date">
+            <h5 class="footer__section--subtitle">Saturday</h5>
+            <p>10:00 AM - 4:00 PM</p>
+          </div>
+          <div class="footer__hours--date">
+            <h5 class="footer__section--subtitle">Sunday</h5>
+            <p>Closed</p>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="footer__section">
+        <h3 class="footer__section--title">Social</h3>
+        <img
+          class="footer__section--icon"
+          src="../assets/icons/icon-facebook.png"
+          alt="Facebook icon"
+        />
+        <img
+          class="footer__section--icon"
+          src="../assets/icons/icon-instagram.png"
+          alt="Instagram icon"
+        />
+        <img
+          class="footer__section--icon"
+          src="../assets/icons/icon-twitter.png"
+          alt="Twitter icon"
+        />
+      </div>
+    </footer>
   </body>
 </html>
