@@ -2,7 +2,7 @@
 body {
     margin: 0;
 }
-h1, h3, h5, p, a {
+h1, h3, h5, p, li, a {
     font-family: "Verdana", sans-serif;
     margin: 0;
 }
