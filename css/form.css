@@ -1,0 +1,33 @@
+.form {
+    display: flex;
+    justify-content: space-between;
+    height: 50vh;
+    padding: 5vw;
+    margin-top: 4rem;
+}
+.form__container, .form__items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    max-width: 50vw;
+}
+
+.form__title, .form__desc, .form--input {
+    margin-bottom: 1rem;
+}
+.form__image {
+    min-width: 30vw;
+    max-width: 33vw;
+}
+#submit {
+    color: #FFFFFF;
+    background-color: #DB7A4E;
+    padding: 0.5rem 1.25rem;
+    border: none;
+    border-radius: 3rem;
+}
+#submit:hover {
+    transform: scale(1.2);
+    transition: scale(1.2) 10s;
+}
