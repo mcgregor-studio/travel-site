@@ -23,10 +23,6 @@
     padding: 0.5rem 1.25rem;
     border-radius: 3rem;
 }
-.button:hover {
-    transform: scale(1.2);
-    transition: scale(1.2) 10s;
-}
 
 /* Recommendations */
 .recommendations {
