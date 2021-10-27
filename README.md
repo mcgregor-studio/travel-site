@@ -1,9 +1,9 @@
 Travel Site - Sprint 1
 
-## Description
+# Description
 This is the first sprint for my first graded project in Brainstation. It was required to have the following: 
 
-# Home Page
+## Home Page
 - 3 Destinations Pages (Iceland, Greece, Hawaii)
 - Navigation Bar
 The Navigation Bar must have working links for each Page (Logo (should link to the Home page), Home, Iceland, Greece, Hawaii)
@@ -11,12 +11,12 @@ The Navigation Bar must have working links for each Page (Logo (should link to t
 - Recommendations Section
 - 3 Cards, one for each destination & linked to the appropriate destination page. Clicking anywhere on the card must go to the destination page.
 - Footer
-# Destination Pages
+## Destination Pages
 - Navigation Bar (Same as Home Page)
 - 3 Itinerary Cards for a 3 Day trip (Friday, Saturday, Sunday)
 - Footer (Same as Home Page)
 
-## Visual Elements
+# Visual Elements
 The following visual design elements were required: 
 
 - The site must use the provided assets
@@ -31,13 +31,13 @@ The following visual design elements were required:
     - The footer subtitles must be the color #DB7A4E
     - The base font for the site must be Verdana.
 
-# Home Page - Hero Section
+## Home Page - Hero Section
 - The hero background color must be #FEFAF5
 - The text content must be left aligned
 - The slogan color must be #335576
 - The ‘Get Started’ Button background color must be #DB7A4E
 
-# Home Page - Recommendations Section
+## Home Page - Recommendations Section
 - The recommendations title must have the color of #335576
 - There will be 3 Cards, one for each destination (Iceland, Greece, Hawaii)
 - The destination name must be in the bottom right corner of the card
@@ -49,7 +49,7 @@ The following visual design elements were required:
     - Blur: 4px
     - Color: Black, with an opacity of 20%
 
-# Destination Pages
+## Destination Pages
 - They must have a title with the destination name
 - The provided image asset for the destination must take up the full width/height of the background for the page.
 - They must have 3 Days of Itinerary activities including:
@@ -57,7 +57,7 @@ The following visual design elements were required:
     - 4 Itinerary activities (e.g. Breakfast, Lunch, Dinner, Snorkeling)
     - Activities must have a background of #FEFAF5
 
-## Implementation
+# Implementation
 - Semantic tags must be used where appropriate (e.g. header, footer, navbar, etc)
 - All CSS must be placed in a separate stylesheet and connected to the HTML through the link tag.
 - File/Folder structure must be organized according to initial specifications shared
