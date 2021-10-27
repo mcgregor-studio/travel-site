@@ -72,6 +72,6 @@ The following visual design elements were required:
 
 I have also included the following:
 - hover animations for top navigation links and destination cards
-- An additional page that the user will be redirected to when they click the "Get Started" page. It allows the user to select their destination of choice, and input their name and email.
+- An additional page that the user will be redirected to when they click the "Get Started" page. It allows the user to input their name, email, and select their destination of choice.
 
 

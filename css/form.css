@@ -26,4 +26,8 @@ h1, p, label {
     padding: 0.5rem 1.25rem;
     border: none;
     border-radius: 3rem;
+    transition: transform 0.2s;
+}
+#submit:hover {
+    transform: scale(1.2);
 }

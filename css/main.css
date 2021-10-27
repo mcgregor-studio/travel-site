@@ -17,11 +17,17 @@
 .hero__text {
     margin: 1.25rem 0 1.75rem ;
 }
-.button {
+.hero__button {
+    position: relative;
     color: #FFFFFF;
+    font-weight: bold;
     background-color: #DB7A4E;
     padding: 0.5rem 1.25rem;
     border-radius: 3rem;
+    transition: transform 0.2s;
+}
+.hero__button:hover {
+    transform: scale(1.2);
 }
 
 /* Recommendations */
@@ -51,10 +57,10 @@
     border: 0.0625rem solid rgba(0, 0, 0, 0.2);
     border-radius: 0.3125rem;
     box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
 }
 .recommendations__card:hover {
     transform: scale(1.1);
-    transition: scale(1.1) 10s;
 }
 #greece {
     background: url("../assets/images/greece.jpg") center no-repeat;
