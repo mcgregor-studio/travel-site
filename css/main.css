@@ -19,6 +19,7 @@
 }
 .hero__button {
     position: relative;
+    display: inline-block;
     color: #FFFFFF;
     font-weight: bold;
     background-color: #DB7A4E;
