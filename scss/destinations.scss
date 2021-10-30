@@ -1,0 +1,48 @@
+@use 'partials/global';
+
+.itinerary {
+    &--greece {
+        @include global.destination();
+        background: url(../assets/images/greece.jpg) center/cover no-repeat;
+    }
+    &--hawaii {
+        @include global.destination();
+        background: url(../assets/images/hawaii.jpg) center/cover no-repeat;
+    }
+    &--iceland {
+        @include global.destination();
+        background: url(../assets/images/iceland.jpg) center/cover no-repeat;
+    }
+    &__container {
+        @include global.flex-between();
+        @include global.center();
+    }
+    &__title {
+        margin-left: 5vw;
+        margin-bottom: 3rem;
+        font-size: 4rem;
+        color: #FFFFFF;
+    }
+    &__date {
+        @include global.card();
+        border-radius: 0.5rem;
+        background-color: #FFFFFF;
+        &--title {
+            color: #000000;
+            border-bottom: 0.125rem solid #000000;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        &--list-item {
+            background-color: global.$background;
+            padding: 0.5rem 0;
+            margin: 1rem 0;
+            text-align: center;
+        }
+    }
+}
+
+
+
+
+

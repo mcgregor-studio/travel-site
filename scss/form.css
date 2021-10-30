@@ -1,0 +1,147 @@
+/* Variables */
+/* Mixins */
+/* Global Styling*/
+body {
+  margin: 0;
+  min-width: 1280px;
+}
+
+h1, h3, h5, p, li, a, input, label {
+  font-family: "Verdana", sans-serif;
+  margin: 0;
+}
+
+h1, h3, p, a {
+  color: #335576;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h5 {
+  text-transform: uppercase;
+  color: #DB7A4E;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  height: 4rem;
+  width: 100%;
+  background-color: #FFFFFF;
+}
+.header__list {
+  display: flex;
+  align-items: flex-start;
+  padding-right: 5vw;
+}
+.header__list--link {
+  margin-right: 1.25rem;
+  padding-bottom: 0.5rem;
+}
+.header__title {
+  padding-left: 5vw;
+}
+
+.active-link {
+  border-bottom: 0.25rem solid #DB7A4E;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 15vw;
+  background: #FEFAF5;
+}
+.footer__section--title {
+  margin-bottom: 3rem;
+}
+.footer__section--text, .footer__section--icon {
+  margin-top: 1rem;
+}
+.footer__section--icon {
+  min-width: 1rem;
+  max-width: 2rem;
+  min-height: 1rem;
+  max-height: 2rem;
+  margin-right: 2rem;
+}
+.footer__hours--container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.footer__hours--date {
+  margin-right: 2rem;
+}
+
+a.footer__section--text, a.footer__section--icon {
+  display: inline-block;
+}
+
+/* Button Hover Animations */
+.header__list--link:hover {
+  border-bottom: 0.25rem solid #DB7A4E;
+  padding-bottom: 0.5rem;
+  transition: border-bottom 0.05s;
+}
+
+#submit:hover, .button:hover {
+  transform: scale(1.1);
+  transition: scale(1.1);
+}
+
+h1, p, label {
+  color: #FFFFFF;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  background-color: #335576;
+  height: 60vh;
+  padding: 5vw;
+  margin-top: 4rem;
+}
+.form__container, .form__items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  max-width: 50vw;
+}
+.form__title, .form--input, .form__desc {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+#submit {
+  color: #FFFFFF;
+  background-color: #DB7A4E;
+  padding: 0.5rem 1.25rem;
+  border: none;
+  border-radius: 3rem;
+  transition: transform 0.2s;
+}
+#submit:hover {
+  transform: scale(1.1);
+}/*# sourceMappingURL=form.css.map */

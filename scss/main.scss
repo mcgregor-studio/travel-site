@@ -1,0 +1,78 @@
+@use 'partials/global';
+
+/* Hero */
+.hero {
+    @include global.flex-between();
+    @include global.center();
+    background-color: global.$background;
+    padding: 5vw;
+    margin-top: 4rem;
+    &__container {
+        width: 50vw;
+    }
+    &__image {
+        min-width: 30vw;
+        max-width: 33vw;
+    }
+    &__text {
+        margin: 1.25rem 0 1.75rem ;
+    }
+    &__button {
+        position: relative;
+        display: inline-block;
+        color: #FFFFFF;
+        font-weight: bold;
+        background-color: global.$highlight;
+        padding: 0.5rem 1.25rem;
+        border-radius: 3rem;
+        transition: transform 0.2s;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+    
+}
+
+/* Recommendations */
+.recommendations {
+    padding: 3rem 0;
+    &__container {
+        @include global.flex-between();
+        @include global.center();
+    }
+    &__title {
+        margin-left: 5vw;
+        margin-bottom: 3rem;
+    }
+    &__card {
+        @include global.card();
+        position: relative;
+        border: 0.0625rem solid rgba(0, 0, 0, 0.2);
+        border-radius: 0.3125rem;
+        box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2);
+        transition: transform 0.2s;
+        &--title {
+            position: absolute;
+            bottom: 1rem;
+            right: 1rem;
+            color:#FFFFFF;
+        }
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+}
+#greece {
+    background: url("../assets/images/greece.jpg") center no-repeat;
+    @include global.image();
+}
+#hawaii {
+    background: url("../assets/images/hawaii.jpg") center no-repeat;
+    @include global.image();
+}
+#iceland {
+    background: url("../assets/images/iceland.jpg") center no-repeat;
+    @include global.image();
+}
+

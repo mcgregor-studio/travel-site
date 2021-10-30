@@ -1,0 +1,130 @@
+/* Variables */
+$text: #335576;
+$highlight: #DB7A4E;
+$background: #FEFAF5;
+
+/* Mixins */
+@mixin flex-between() {
+    display: flex;
+    justify-content: space-between;
+}
+@mixin center() {
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 15vw;
+}
+@mixin card() {
+    height: 22rem;
+    width: 18vw;
+    padding: 1rem;
+}
+@mixin destination() {
+    margin-top: 4rem;
+    padding: 3rem 0;
+}
+@mixin image() {
+background-size: 20rem auto;
+}
+
+/* Global Styling*/
+body {
+    margin: 0;
+    min-width: 1280px;
+}
+h1, h3, h5, p, li, a, input, label {
+    font-family: "Verdana", sans-serif;
+    margin: 0;
+}
+h1, h3, p, a {
+    color: $text;
+}
+h1 {
+    font-size: 2.5rem;
+}
+h5 {
+    text-transform: uppercase;
+    color: $highlight;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    padding: 0;
+}
+li {
+    list-style-type: none;
+}
+
+/* Header */
+.header {
+    @include flex-between();
+    align-items: baseline;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    height: 4rem;
+    width: 100%;
+    background-color: #FFFFFF;
+    &__list {
+        display: flex;
+        align-items: flex-start;
+        padding-right: 5vw;
+        &--link {
+            margin-right: 1.25rem;
+            padding-bottom: 0.5rem;
+        }
+    }
+    &__title {
+        padding-left: 5vw;
+    }
+}
+.active-link {
+    border-bottom: 0.25rem solid $highlight;
+}
+
+/* Footer */
+.footer {
+    @include flex-between();
+    padding: 3rem 15vw;
+    background: $background;
+    &__section {
+        &--title {
+            margin-bottom: 3rem;
+        }
+        &--text {
+            margin-top: 1rem;
+        }
+        &--icon {
+            @extend .footer__section--text;
+            min-width: 1rem;
+            max-width: 2rem;
+            min-height: 1rem;
+            max-height: 2rem;
+            margin-right: 2rem;
+        }
+    }
+    &__hours {
+        &--container {
+            @include flex-between();
+            align-items: flex-start;
+        }
+        &--date {
+            margin-right: 2rem;
+        }
+    }
+}
+a.footer__section--text {
+    display: inline-block;
+}
+
+/* Button Hover Animations */
+.header__list--link:hover {
+    border-bottom: 0.25rem solid $highlight;
+    padding-bottom: 0.5rem;
+    transition: border-bottom 0.05s;
+}
+#submit:hover, .button:hover {
+    transform: scale(1.1);
+    transition: scale(1.1);
+}
