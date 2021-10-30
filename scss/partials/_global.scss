@@ -118,7 +118,7 @@ a.footer__section--text {
     display: inline-block;
 }
 
-/* Button Hover Animations */
+/* Transitions */
 .header__list--link:hover {
     border-bottom: 0.25rem solid $highlight;
     padding-bottom: 0.5rem;
@@ -127,4 +127,8 @@ a.footer__section--text {
 #submit:hover, .button:hover {
     transform: scale(1.1);
     transition: scale(1.1);
+}
+#footer__section--email:hover {
+    color: $highlight;
+    transition: color 0.1s;
 }

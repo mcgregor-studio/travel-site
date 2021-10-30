@@ -6,7 +6,7 @@ body {
   min-width: 1280px;
 }
 
-h1, h3, h5, p, li, a, input, label {
+h1, h3, h5, p, li, a, input, label, .form__title, .form__desc, .form--input, #submit {
   font-family: "Verdana", sans-serif;
   margin: 0;
 }
@@ -99,7 +99,7 @@ a.footer__section--text, a.footer__section--icon {
   display: inline-block;
 }
 
-/* Button Hover Animations */
+/* Transitions */
 .header__list--link:hover {
   border-bottom: 0.25rem solid #DB7A4E;
   padding-bottom: 0.5rem;
@@ -111,7 +111,12 @@ a.footer__section--text, a.footer__section--icon {
   transition: scale(1.1);
 }
 
-h1, p, label {
+#footer__section--email:hover {
+  color: #DB7A4E;
+  transition: color 0.1s;
+}
+
+label, #submit, .form__desc, .form__title, .form--input {
   color: #FFFFFF;
 }
 
@@ -134,13 +139,17 @@ h1, p, label {
   margin-bottom: 1rem;
   text-align: center;
 }
+.form--input {
+  color: #335576;
+}
+
 #submit {
-  color: #FFFFFF;
   background-color: #DB7A4E;
   padding: 0.5rem 1.25rem;
   border: none;
   border-radius: 3rem;
   transition: transform 0.2s;
+  font-weight: bold;
 }
 #submit:hover {
   transform: scale(1.1);

@@ -99,7 +99,7 @@ a.footer__section--text, a.footer__section--icon {
   display: inline-block;
 }
 
-/* Button Hover Animations */
+/* Transitions */
 .header__list--link:hover {
   border-bottom: 0.25rem solid #DB7A4E;
   padding-bottom: 0.5rem;
@@ -109,6 +109,11 @@ a.footer__section--text, a.footer__section--icon {
 #submit:hover, .button:hover {
   transform: scale(1.1);
   transition: scale(1.1);
+}
+
+#footer__section--email:hover {
+  color: #DB7A4E;
+  transition: color 0.1s;
 }
 
 /* Hero */
@@ -123,7 +128,7 @@ a.footer__section--text, a.footer__section--icon {
   margin-top: 4rem;
 }
 .hero__container {
-  width: 50vw;
+  width: 45vw;
 }
 .hero__image {
   min-width: 30vw;
@@ -183,15 +188,15 @@ a.footer__section--text, a.footer__section--icon {
 
 #greece {
   background: url("../assets/images/greece.jpg") center no-repeat;
-  background-size: 20rem auto;
+  background-size: 18rem auto;
 }
 
 #hawaii {
   background: url("../assets/images/hawaii.jpg") center no-repeat;
-  background-size: 20rem auto;
+  background-size: 18rem auto;
 }
 
 #iceland {
   background: url("../assets/images/iceland.jpg") center no-repeat;
-  background-size: 20rem auto;
+  background-size: 18rem auto;
 }/*# sourceMappingURL=main.css.map */

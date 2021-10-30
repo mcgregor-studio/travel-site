@@ -99,7 +99,7 @@ a.footer__section--text, a.footer__section--icon {
   display: inline-block;
 }
 
-/* Button Hover Animations */
+/* Transitions */
 .header__list--link:hover {
   border-bottom: 0.25rem solid #DB7A4E;
   padding-bottom: 0.5rem;
@@ -109,6 +109,11 @@ a.footer__section--text, a.footer__section--icon {
 #submit:hover, .button:hover {
   transform: scale(1.1);
   transition: scale(1.1);
+}
+
+#footer__section--email:hover {
+  color: #DB7A4E;
+  transition: color 0.1s;
 }
 
 .itinerary--greece {
@@ -154,7 +159,7 @@ a.footer__section--text, a.footer__section--icon {
 }
 .itinerary__date--list-item {
   background-color: #FEFAF5;
-  padding: 0.5rem 0;
+  padding: 1rem 0;
   margin: 1rem 0;
   text-align: center;
 }/*# sourceMappingURL=destinations.css.map */
